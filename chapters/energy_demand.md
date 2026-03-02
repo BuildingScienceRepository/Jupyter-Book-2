@@ -1,3 +1,12 @@
+---
+exports:
+  - format: pdf
+    template: typst
+    id: pdf-export
+downloads:
+  - id: pdf-export
+    title: Download PDF
+---
 # Energy Demand
 
 What is the energy demand of a building?
