@@ -1,3 +1,12 @@
+---
+exports:
+  - format: pdf
+    id: energy-demand-pdf
+downloads:
+  - id: energy-demand-pdf
+    title: Download PDF
+---
+
 # Energy Demand
 
 What is the energy demand of a building?

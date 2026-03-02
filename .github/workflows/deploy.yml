@@ -33,6 +33,12 @@ jobs:
       - name: Install MyST
         run: npm install -g mystmd
 
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Build PDF Assets
+        run: myst build --pdf
+
       - name: Build MyST Site
         env:
           BASE_URL: /${{ github.event.repository.name }}
