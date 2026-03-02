@@ -1,3 +1,8 @@
+---
+exports:
+  - format: pdf
+    template: typst
+---
 # Building Science Atlas
 
 Welcome to the Building Science Atlas! This is a collaborative, open-source repository and wiki compiling the current state of sustainability analysis for building science and urban analysis.
