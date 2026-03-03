@@ -1,15 +1,18 @@
 ---
 exports:
   - format: pdf
-    template: typst
+    template: lapreprint-typst
     id: pdf-export
 downloads:
   - id: pdf-export
     title: Download PDF
 ---
+
 # Building Science Atlas
 
++++ {"part": "abstract"}
 Welcome to the Building Science Atlas! This is a collaborative, open-source repository and wiki compiling the current state of sustainability analysis for building science and urban analysis.
++++
 
 ## Goals
 

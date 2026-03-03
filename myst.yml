@@ -4,6 +4,8 @@ project:
   title: Building Science Atlas
   description: A collaborative repository and wiki compiling the current state of sustainability analysis for building science and urban analysis.
   github: https://github.com/BuildingScienceRepository/Jupyter-Book-2
+  authors:
+    - name: Building Science Atlas
   toc:
     - file: index.md
     - title: Theory
