@@ -1,7 +1,7 @@
 ---
 exports:
   - format: pdf
-    template: typst
+    template: lapreprint
     id: pdf-export
 downloads:
   - id: pdf-export
@@ -9,9 +9,9 @@ downloads:
 ---
 # Energy Demand
 
-What is the energy demand of a building?
-
-This chapter explores different approaches to calculating or estimating the energy demand of a building, ranging from simple ballpark estimations to complex, detailed simulations.
++++ {"part": "abstract"}
+What is the energy demand of a building? This chapter explores different approaches to calculating or estimating the energy demand of a building, ranging from simple ballpark estimations to complex, detailed simulations.
++++
 
 ## 1. Ballpark Estimations
 
