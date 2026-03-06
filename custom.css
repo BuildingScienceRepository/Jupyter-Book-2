@@ -1,0 +1,17 @@
+/* 🎨 Palette: Accessibility & UX Improvements */
+
+/* Improve focus visibility for keyboard navigation */
+:focus-visible {
+  outline: 3px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+  border-radius: 2px;
+}
+
+/* Add smooth transition for interactive links */
+a {
+  transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.8;
+}

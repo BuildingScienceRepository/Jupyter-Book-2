@@ -1,19 +1,20 @@
-# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
   title: Building Science Atlas
-  description: A collaborative repository and wiki compiling the current state of sustainability analysis for building science and urban analysis.
+  description: A collaborative repository and wiki compiling the current state of
+    sustainability analysis for building science and urban analysis.
   github: https://github.com/BuildingScienceRepository/Jupyter-Book-2
   authors:
-    - name: Building Science Atlas
+  - name: Building Science Atlas
   toc:
-    - file: index.md
-    - title: Theory
-      children:
-        - file: chapters/energy_demand.md
-    - title: Workflows & Examples
-      children:
-        - file: notebooks/example_simulation.ipynb
-
+  - file: index.md
+  - title: Theory
+    children:
+    - file: chapters/energy_demand.md
+  - title: Workflows & Examples
+    children:
+    - file: notebooks/example_simulation.ipynb
 site:
   template: book-theme
+  options:
+    style: custom.css

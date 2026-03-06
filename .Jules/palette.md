@@ -1,0 +1,3 @@
+## 2024-03-06 - Enhancing MyST Accessibility and Polish
+**Learning:** This is a MyST markdown (Jupyter Book 2) project. Direct HTML/JSX edits aren't possible as the site is statically generated from Markdown and predefined themes. However, MyST allows injecting a custom CSS file via `site.options.style` in `myst.yml`.
+**Action:** Created `custom.css` to add a highly visible, keyboard-accessible focus ring (`:focus-visible`) and smooth hover transitions. Added this CSS to `myst.yml`. This improves keyboard navigation accessibility and provides a subtle layer of UX polish on interactions without changing the core theme or adding dependencies.
