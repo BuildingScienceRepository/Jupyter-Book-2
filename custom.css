@@ -7,6 +7,13 @@
   border-radius: 2px;
 }
 
+/* Add smooth scrolling for anchor links, respecting user motion preferences */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Add smooth transition for interactive links */
 a {
   transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
