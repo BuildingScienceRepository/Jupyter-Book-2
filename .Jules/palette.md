@@ -5,3 +5,7 @@
 ## 2026-03-07 - Accessible Smooth Scrolling in Static Sites
 **Learning:** Adding `scroll-behavior: smooth` directly to the `html` element is a quick way to add spatial context to anchor link navigation (e.g., Table of Contents clicks) in statically generated sites like MyST. However, this global smooth scrolling can trigger motion sickness for users with vestibular disorders.
 **Action:** Implemented the smooth scroll CSS pattern wrapped in a `@media (prefers-reduced-motion: no-preference)` query. This provides the UX enhancement for most users while seamlessly falling back to instant jumps for users who have requested reduced motion at the OS level. This is a crucial accessibility pattern for any global CSS animation or transition.
+
+## 2024-03-08 - Spatial Context for Anchor Links in Document-Heavy Sites
+**Learning:** In document-heavy sites like those built with MyST, navigating via internal anchor links (like Table of Contents or footnotes) can cause users to lose their place, as it's not immediately clear which paragraph or section was targeted after the page jump. Using the `:target` CSS pseudo-class can temporarily highlight the destination element, providing immediate spatial context.
+**Action:** Added a subtle background highlight animation using `:target` to draw attention to the newly focused section. Crucially, I included a `@media (prefers-reduced-motion: reduce)` fallback that replaces the animation with a static visual indicator (a left border) to ensure the enhancement remains accessible to users with vestibular disorders.

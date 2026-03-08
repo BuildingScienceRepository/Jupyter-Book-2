@@ -22,3 +22,27 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+/* Provide spatial context for internal anchor links (e.g. footnotes, TOC) */
+:target {
+  animation: highlight-target 2s ease-out forwards;
+}
+
+@keyframes highlight-target {
+  0% {
+    background-color: rgba(59, 130, 246, 0.2); /* light blue */
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Fallback for users with reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  :target {
+    animation: none;
+    border-left: 4px solid #3b82f6;
+    padding-left: 0.5rem;
+    background-color: transparent;
+  }
+}
