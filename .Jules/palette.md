@@ -9,3 +9,7 @@
 ## 2024-03-08 - Spatial Context for Anchor Links in Document-Heavy Sites
 **Learning:** In document-heavy sites like those built with MyST, navigating via internal anchor links (like Table of Contents or footnotes) can cause users to lose their place, as it's not immediately clear which paragraph or section was targeted after the page jump. Using the `:target` CSS pseudo-class can temporarily highlight the destination element, providing immediate spatial context.
 **Action:** Added a subtle background highlight animation using `:target` to draw attention to the newly focused section. Crucially, I included a `@media (prefers-reduced-motion: reduce)` fallback that replaces the animation with a static visual indicator (a left border) to ensure the enhancement remains accessible to users with vestibular disorders.
+
+## 2025-03-09 - Legible Link Underlines that Clear Descenders
+**Learning:** Default browser link underlines often intersect with descending characters (like p, g, y, j), which reduces readability and makes text look cluttered. Additionally, relying solely on color (like just changing the text color on hover) for link identification isn't accessible to users with color vision deficiencies.
+**Action:** Implemented modern CSS properties `text-decoration-thickness` and `text-underline-offset` on anchor tags. This pushes the underline down slightly to clear descenders, making text much more readable. Combined this with a subtle `text-decoration-color` that deepens and thickens on `:hover` to provide a clear, accessible, and elegant interaction state.
