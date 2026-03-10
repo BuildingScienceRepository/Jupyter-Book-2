@@ -61,3 +61,22 @@ article a:hover {
     background-color: transparent;
   }
 }
+
+/* Enhance the "Skip to content" link for keyboard users */
+.myst-skip-to-link {
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  border-radius: 0.375rem; /* rounded-md */
+  text-decoration: none !important;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.myst-skip-to-link:last-child {
+  margin-bottom: 0;
+}
+
+.myst-skip-to-link:focus, .myst-skip-to-link:hover {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  transform: translateY(1px);
+}
