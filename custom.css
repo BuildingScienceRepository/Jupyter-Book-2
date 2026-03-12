@@ -62,6 +62,23 @@ article a:hover {
   }
 }
 
+/* Improve readability and scannability of inline code elements */
+:not(pre) > code {
+  background-color: rgba(148, 163, 184, 0.15); /* subtle slate background */
+  border: 1px solid rgba(148, 163, 184, 0.3); /* subtle slate border */
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.875em; /* slightly smaller to fit text line height */
+  color: #c7254e; /* dark pink/red commonly used for inline code readability */
+}
+
+/* Ensure inline code styling works nicely in dark mode if body has dark class */
+.dark :not(pre) > code {
+  background-color: rgba(148, 163, 184, 0.2);
+  border-color: rgba(148, 163, 184, 0.4);
+  color: #ff8fb6; /* lighter pink for dark mode */
+}
+
 /* Enhance the "Skip to content" link for keyboard users */
 .myst-skip-to-link {
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
