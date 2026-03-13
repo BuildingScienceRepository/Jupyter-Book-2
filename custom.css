@@ -97,3 +97,11 @@ article a:hover {
   color: white !important;
   transform: translateY(1px);
 }
+
+/* Improve horizontal tracking in data tables */
+article tbody tr {
+  transition: background-color 0.15s ease-in-out;
+}
+article tbody tr:hover {
+  background-color: rgba(148, 163, 184, 0.1); /* very subtle slate */
+}

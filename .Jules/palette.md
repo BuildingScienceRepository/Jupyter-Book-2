@@ -21,3 +21,7 @@
 ## 2025-03-12 - Differentiating Technical Terms: Inline Code Styling
 **Learning:** In technical documentation (like Building Science Atlas), readers frequently scan text for file names, code snippets, or configuration options. If inline code `<code>` elements lack distinct styling and just use the regular text color/background, they blend in and force the user to read linearly to find what they're looking for, rather than scanning efficiently.
 **Action:** Targeted `:not(pre) > code` in `custom.css` to add a subtle background, border, distinct color (dark pink/red commonly used for code readability), and padding. This makes inline code visually distinct without being overwhelming. I also included a dark mode variant (`.dark :not(pre) > code`) to ensure the contrast and aesthetics remain accessible regardless of the user's theme preference. This small polish drastically improves scannability for technical users.
+
+## 2025-03-15 - Improving Horizontal Tracking in Data Tables
+**Learning:** In technical documentation with data tables, it's easy for users to lose their place when reading across a wide row, especially on larger screens. Without visual feedback on the current row, horizontal tracking is difficult and error-prone.
+**Action:** Added a subtle `background-color` change on `:hover` for table rows (`article tbody tr`). This provides immediate, non-distracting visual reinforcement of the user's current reading position within complex data structures, significantly reducing cognitive load.
