@@ -25,3 +25,7 @@
 ## 2025-03-15 - Improving Horizontal Tracking in Data Tables
 **Learning:** In technical documentation with data tables, it's easy for users to lose their place when reading across a wide row, especially on larger screens. Without visual feedback on the current row, horizontal tracking is difficult and error-prone.
 **Action:** Added a subtle `background-color` change on `:hover` for table rows (`article tbody tr`). This provides immediate, non-distracting visual reinforcement of the user's current reading position within complex data structures, significantly reducing cognitive load.
+
+## 2025-03-20 - Adding Keyboard Shortcut Affordance
+**Learning:** In technical documentation sites, keyboard shortcuts are frequently referenced (like `Ctrl` + `C`). By default in this MyST theme, `<kbd>` elements don't always have distinctive "key-like" styling unless specifically wrapped in Tailwind classes like the global search shortcut. Naked `<kbd>` tags inserted by authors can look plain or indistinguishable from regular inline code.
+**Action:** Targeted `kbd` elements globally in `custom.css` to add a subtle gray background, border, border radius, and crucially, a bottom `box-shadow` that creates a 3D "key" effect. Also included a `.dark kbd` variant to ensure it looks integrated and legible in dark mode (removing the shadow and adjusting colors). This provides a delightful, intuitive visual affordance for keyboard shortcuts throughout the content.
