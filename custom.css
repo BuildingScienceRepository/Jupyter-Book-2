@@ -79,6 +79,34 @@ article a:hover {
   color: #ff8fb6; /* lighter pink for dark mode */
 }
 
+/* Improve focus accessibility for header actionable icon buttons and links */
+.myst-search-bar:focus-visible,
+.myst-theme-button:focus-visible,
+.myst-fm-github-link:focus-visible,
+.myst-fm-edit-link:focus-visible {
+  outline: 3px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+  border-radius: 0.375rem; /* rounded-md */
+}
+
+/* Ensure circular buttons maintain circular focus rings */
+.myst-theme-button:focus-visible {
+  border-radius: 9999px; /* rounded-full */
+}
+
+/* Add an interactive background color shift to footer navigational links */
+.myst-footer-link {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.myst-footer-link:hover {
+  background-color: rgba(241, 245, 249, 0.6); /* slate-100 semi-transparent */
+}
+
+.dark .myst-footer-link:hover {
+  background-color: rgba(30, 41, 59, 0.4); /* slate-800 semi-transparent for dark mode */
+}
+
 /* Enhance the "Skip to content" link for keyboard users */
 .myst-skip-to-link {
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
