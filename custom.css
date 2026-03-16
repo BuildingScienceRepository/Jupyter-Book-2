@@ -41,6 +41,12 @@ article a:hover {
 /* Provide spatial context for internal anchor links (e.g. footnotes, TOC) */
 :target {
   animation: highlight-target 2s ease-out forwards;
+  scroll-margin-top: 5rem; /* Prevents targeted elements from sitting flush against the top edge or under sticky headers */
+}
+
+/* Ensure headings also have breathing room when deep-linked, even if not the explicit :target */
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 5rem;
 }
 
 @keyframes highlight-target {
