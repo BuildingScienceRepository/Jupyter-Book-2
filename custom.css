@@ -159,3 +159,33 @@ kbd {
   color: rgba(229, 231, 235, 1); /* Tailwind gray-200 */
   box-shadow: none; /* Flatter in dark mode for better integration, or keep a dark shadow */
 }
+
+/* 🎨 Palette: Print-friendly documentation */
+@media print {
+  /* Hide navigation, sidebars, footer, and interactive buttons */
+  .myst-top-nav-bar,
+  .myst-primary-sidebar-toc,
+  .myst-primary-sidebar-topnav,
+  .myst-footer-links,
+  .myst-fm-block-badges,
+  .myst-theme-button,
+  .myst-search-bar,
+  .myst-toc,
+  .myst-fm-edit-link,
+  .lg\:col-margin-right {
+    display: none !important;
+  }
+
+  /* Ensure a printer-friendly background and text color */
+  body, main, article {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  /* also hide the made with myst footer block thing */
+  .myst-made-with-myst,
+  .myst-sidebar-footer,
+  aside {
+     display: none !important;
+  }
+}
