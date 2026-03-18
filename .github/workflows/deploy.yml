@@ -36,6 +36,9 @@ jobs:
       - name: Setup Typst
         uses: typst-community/setup-typst@v3
 
+      - name: Download Typst Template
+        run: myst templates download typst/myst/lapreprint-typst
+
       - name: Build PDF Assets
         run: myst build --pdf --force
 
