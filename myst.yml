@@ -6,6 +6,14 @@ project:
   github: https://github.com/BuildingScienceRepository/Jupyter-Book-2
   authors:
   - name: Building Science Atlas
+  exports:
+  - id: full-book-pdf
+    format: pdf
+    template: lapreprint-typst
+    output: exports/building-science-atlas-book.pdf
+  downloads:
+  - id: full-book-pdf
+    title: Download full book PDF
   toc:
   - file: index.md
   - title: Theory
