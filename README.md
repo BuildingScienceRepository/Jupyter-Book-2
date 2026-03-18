@@ -19,3 +19,9 @@ This project is built using [MyST Markdown](https://mystmd.org/) (the engine beh
 3.  Submit a Pull Request.
 
 All changes to the `main` branch are automatically built and deployed to GitHub Pages.
+
+## PDF outputs
+
+Every content page in the MyST table of contents defines its own page-level PDF export and download button. The project configuration in `myst.yml` also defines a `full-book-pdf` export so the deployed site exposes a concatenated PDF for the entire book on every page.
+
+The GitHub Pages workflow builds both the site and PDF artifacts automatically on each push to `main`.
