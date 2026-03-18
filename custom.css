@@ -189,3 +189,22 @@ kbd {
      display: none !important;
   }
 }
+
+/* Improve scannability and visual distinction of blockquotes */
+article blockquote {
+  border-left: 4px solid rgba(148, 163, 184, 0.4); /* slate border */
+  background-color: rgba(241, 245, 249, 0.5); /* subtle slate background */
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  color: rgba(55, 65, 81, 1); /* Tailwind gray-700 */
+  font-style: italic;
+}
+
+/* Ensure blockquotes remain readable and distinct in dark mode */
+.dark article blockquote {
+  border-left-color: rgba(148, 163, 184, 0.6); /* slightly stronger slate border */
+  background-color: rgba(30, 41, 59, 0.4); /* dark slate background */
+  color: rgba(209, 213, 219, 1); /* Tailwind gray-300 */
+}
