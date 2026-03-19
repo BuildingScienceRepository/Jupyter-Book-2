@@ -2,10 +2,13 @@
 exports:
   - format: pdf
     template: lapreprint-typst
-    id: pdf-export
+    output: exports/index-page.pdf
+    id: index-page-pdf
 downloads:
-  - id: pdf-export
-    title: Download PDF
+  - id: index-page-pdf
+    title: Download This Page (PDF)
+  - id: full-book-pdf
+    title: Download Full Book PDF
 ---
 
 # Building Science Atlas

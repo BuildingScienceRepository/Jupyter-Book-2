@@ -2,10 +2,13 @@
 exports:
   - format: pdf
     template: lapreprint-typst
-    id: pdf-export
+    output: exports/energy-demand-page.pdf
+    id: energy-demand-page-pdf
 downloads:
-  - id: pdf-export
-    title: Download PDF
+  - id: energy-demand-page-pdf
+    title: Download This Page (PDF)
+  - id: full-book-pdf
+    title: Download Full Book PDF
 ---
 # Energy Demand
 

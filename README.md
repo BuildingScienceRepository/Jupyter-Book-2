@@ -22,6 +22,8 @@ All changes to the `main` branch are automatically built and deployed to GitHub 
 
 ## PDF outputs
 
-Every content page in the MyST table of contents defines its own page-level PDF export and download button. The project configuration in `myst.yml` also defines a `full-book-pdf` export so the deployed site exposes a concatenated PDF for the entire book on every page.
+Every content page in the MyST table of contents defines its own page-level PDF export and download button (`Download This Page (PDF)`) with a unique export ID and output path.
+
+The project configuration in `myst.yml` also defines a `full-book-pdf` export with an explicit `articles` list so the deployed site exposes a single concatenated PDF containing all TOC pages.
 
 The GitHub Pages workflow builds both the site and PDF artifacts automatically on each push to `main`.
