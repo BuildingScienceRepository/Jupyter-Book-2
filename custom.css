@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Improve focus accessibility for header actionable icon buttons and links */
+.myst-top-nav-menu-button:focus-visible,
 .myst-search-bar:focus-visible,
 .myst-theme-button:focus-visible,
 .myst-fm-github-link:focus-visible,
