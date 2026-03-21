@@ -209,3 +209,26 @@ article blockquote {
   background-color: rgba(30, 41, 59, 0.4); /* dark slate background */
   color: rgba(209, 213, 219, 1); /* Tailwind gray-300 */
 }
+
+/* Add tactile active state (press effect) and smooth transition to icon buttons */
+.myst-theme-button,
+.myst-top-nav-menu-button,
+.myst-fm-github-link,
+.myst-fm-edit-link,
+.myst-outline-collapsible {
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease !important;
+}
+
+.myst-theme-button:active,
+.myst-top-nav-menu-button:active,
+.myst-fm-github-link:active,
+.myst-fm-edit-link:active,
+.myst-outline-collapsible:active {
+  transform: scale(0.92) !important;
+}
+
+/* Ensure links acting as buttons display correctly for transform to apply */
+.myst-fm-github-link,
+.myst-fm-edit-link {
+  display: inline-block;
+}
