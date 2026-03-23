@@ -53,3 +53,7 @@
 ## 2025-04-12 - Adding Tactile Feedback to Icon Buttons
 **Learning:** In static documentation sites, icon-only buttons (like theme toggles, external links, and collapsible menus) often lack immediate tactile feedback when clicked. While hover states provide affordance, the absence of an `:active` state leaves the interaction feeling hollow, especially on touch devices where hover isn't present.
 **Action:** Added a global CSS rule targeting key interactive icon buttons (`.myst-theme-button`, `.myst-top-nav-menu-button`, `.myst-fm-github-link`, `.myst-fm-edit-link`, `.myst-outline-collapsible`) with `transform: scale(0.92)` on `:active` and a smooth `transition`. This creates a satisfying "press" effect that immediately acknowledges the user's input, significantly enhancing the perceived responsiveness and quality of the interface.
+
+## 2025-04-14 - Elegant Text Selection Styling
+**Learning:** Default browser text selection colors can be harsh, unbranded, and disrupt the visual harmony of a site, particularly in text-heavy documentation sites where users frequently highlight text to read, copy, or share.
+**Action:** Implemented a global custom text selection style using the `::selection` pseudo-element in `custom.css`. We replaced the default browser highlight with a semi-transparent, theme-aligned color (a soft blue). A `.dark ::selection` variant was also added to ensure sufficient contrast and visual cohesion in dark mode. This small detail significantly elevates the perceived quality and polish of the reading experience.
