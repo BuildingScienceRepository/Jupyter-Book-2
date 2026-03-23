@@ -232,3 +232,15 @@ article blockquote {
 .myst-fm-edit-link {
   display: inline-block;
 }
+
+/* 🎨 Palette: Text Selection Styling */
+/* Improve visual cohesion by using a semi-transparent theme color for text selection */
+::selection {
+  background-color: rgba(59, 130, 246, 0.25); /* light blue selection */
+  color: inherit;
+}
+
+.dark ::selection {
+  background-color: rgba(59, 130, 246, 0.4); /* slightly darker blue for dark mode */
+  color: inherit;
+}
