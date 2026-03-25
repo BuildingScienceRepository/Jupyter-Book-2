@@ -215,7 +215,7 @@ article blockquote {
 .myst-top-nav-menu-button,
 .myst-fm-github-link,
 .myst-fm-edit-link,
-.myst-outline-collapsible {
+.myst-toc-item button {
   transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease !important;
 }
 
@@ -223,7 +223,7 @@ article blockquote {
 .myst-top-nav-menu-button:active,
 .myst-fm-github-link:active,
 .myst-fm-edit-link:active,
-.myst-outline-collapsible:active {
+.myst-toc-item button:active {
   transform: scale(0.92) !important;
 }
 
