@@ -57,3 +57,7 @@
 ## 2025-04-14 - Elegant Text Selection Styling
 **Learning:** Default browser text selection colors can be harsh, unbranded, and disrupt the visual harmony of a site, particularly in text-heavy documentation sites where users frequently highlight text to read, copy, or share.
 **Action:** Implemented a global custom text selection style using the `::selection` pseudo-element in `custom.css`. We replaced the default browser highlight with a semi-transparent, theme-aligned color (a soft blue). A `.dark ::selection` variant was also added to ensure sufficient contrast and visual cohesion in dark mode. This small detail significantly elevates the perceived quality and polish of the reading experience.
+
+## 2025-04-16 - Adding Tactile Feedback to TOC Collapsible Buttons
+**Learning:** We previously attempted to add a tactile "press" effect to collapsible buttons in the Table of Contents using `.myst-outline-collapsible`, but this class doesn't exist in the compiled HTML for the sidebar navigation. Instead, the folder toggles are simply `<button>` elements nested inside `.myst-toc-item` containers.
+**Action:** Replaced the incorrect `.myst-outline-collapsible` selector with `.myst-toc-item button` in `custom.css` to properly target the folder toggle buttons. This restores the 0.92 scale transform on `:active`, giving users immediate tactile feedback when expanding or collapsing sections in the primary sidebar.
