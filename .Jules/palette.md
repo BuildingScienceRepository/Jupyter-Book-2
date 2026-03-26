@@ -61,3 +61,7 @@
 ## 2025-04-16 - Adding Tactile Feedback to TOC Collapsible Buttons
 **Learning:** We previously attempted to add a tactile "press" effect to collapsible buttons in the Table of Contents using `.myst-outline-collapsible`, but this class doesn't exist in the compiled HTML for the sidebar navigation. Instead, the folder toggles are simply `<button>` elements nested inside `.myst-toc-item` containers.
 **Action:** Replaced the incorrect `.myst-outline-collapsible` selector with `.myst-toc-item button` in `custom.css` to properly target the folder toggle buttons. This restores the 0.92 scale transform on `:active`, giving users immediate tactile feedback when expanding or collapsing sections in the primary sidebar.
+
+## 2025-04-18 - Scoping Custom Styles in UI Frameworks
+**Learning:** When applying custom CSS to content elements in a templated project (like MyST), using overly broad selectors (like `a` and `a:hover`) can unintentionally override the styles of the framework's core UI elements, such as sidebar navigation or header buttons. This breaks the intended design system and reduces visual consistency.
+**Action:** Removed global link selectors and ensured that interaction properties (like opacity shifts and colors) are strictly scoped to the content area using the `article a` selector. This isolates custom content styling from the structural UI components, preserving the framework's native behaviors where appropriate.

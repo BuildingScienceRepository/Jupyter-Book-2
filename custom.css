@@ -14,15 +14,6 @@
   }
 }
 
-/* Add smooth transition for interactive links globally */
-a {
-  transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
 /* Improve link readability and accessibility by clearing descenders (only within main content) */
 article a {
   text-decoration-line: underline;
