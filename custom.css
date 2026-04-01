@@ -101,7 +101,8 @@ article pre.myst-code-body {
 .myst-fm-github-link:focus-visible,
 .myst-fm-edit-link:focus-visible,
 .myst-fm-downloads-button:focus-visible,
-.myst-outline-collapsible:focus-visible {
+.myst-outline-collapsible:focus-visible,
+.myst-code-copy-icon:focus-visible {
   outline: 3px solid #3b82f6 !important;
   outline-offset: 2px !important;
   border-radius: 0.375rem; /* rounded-md */
@@ -198,7 +199,8 @@ kbd {
   /* also hide the made with myst footer block thing */
   .myst-made-with-myst,
   .myst-sidebar-footer,
-  aside {
+  aside,
+  .myst-code-copy-icon {
      display: none !important;
   }
 }
@@ -228,7 +230,8 @@ article blockquote {
 .myst-fm-github-link,
 .myst-fm-edit-link,
 .myst-fm-downloads-button,
-.myst-toc-item button {
+.myst-toc-item button,
+.myst-code-copy-icon {
   transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease !important;
 }
 
@@ -237,7 +240,8 @@ article blockquote {
 .myst-fm-github-link:active,
 .myst-fm-edit-link:active,
 .myst-fm-downloads-button:active,
-.myst-toc-item button:active {
+.myst-toc-item button:active,
+.myst-code-copy-icon:active {
   transform: scale(0.92) !important;
 }
 
