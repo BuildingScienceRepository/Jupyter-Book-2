@@ -76,3 +76,7 @@
 ## 2025-04-21 - Enhancing Inline Code Copy Button Accessibility and Polish
 **Learning:** The inline code block copy button (`.myst-code-copy-icon`) in MyST themes suffers from the same lack of default focus rings and tactile feedback as other icon buttons. It is also unnecessarily printed when a user prints the documentation.
 **Action:** Added `.myst-code-copy-icon` to the explicit `:focus-visible` rule, the `:active` scale transform rule, and the `@media print` hidden elements list in `custom.css`. This ensures keyboard accessibility, provides immediate tactile feedback when the copy button is clicked, and removes the useless button from printed documents.
+
+## 2025-04-22 - Enhancing "Launch in Binder" Button Accessibility and Polish
+**Learning:** The "Launch in external computing interface" button (`.myst-fm-launch-button`) available in MyST themes for notebooks suffers from the same lack of default focus rings and tactile feedback as other icon buttons in the framework. It should also be hidden when printing documentation.
+**Action:** Added `.myst-fm-launch-button` to the explicit `:focus-visible` rule, the `:active` scale transform rule, and the `@media print` hidden elements list in `custom.css`. This ensures keyboard accessibility, provides immediate tactile feedback when the launch button is clicked, and removes the interactive button from printed documents.
