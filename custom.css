@@ -147,6 +147,11 @@ article pre.myst-code-body {
   transform: translateY(1px);
 }
 
+.myst-skip-to-link:focus-visible {
+  outline: 3px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+}
+
 /* Improve horizontal tracking in data tables */
 article tbody tr {
   transition: background-color 0.15s ease-in-out;

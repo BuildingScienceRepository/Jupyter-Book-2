@@ -84,3 +84,7 @@
 ## 2025-04-23 - Restoring Missing Focus Rings on TOC Collapsible Buttons
 **Learning:** We previously fixed the tactile `:active` state for collapsible folder toggle buttons in the Table of Contents by targeting `.myst-toc-item button` instead of `.myst-outline-collapsible`. However, we missed updating the `:focus-visible` rule with this correct selector. As a result, while mouse users got a tactile click response, keyboard users still lacked a visible focus ring for these crucial navigation elements, failing accessibility.
 **Action:** Added `.myst-toc-item button:focus-visible` to our main explicit `:focus-visible` rule in `custom.css`. This ensures that when correcting a framework class selector (like moving from `.myst-outline-collapsible` to `.myst-toc-item button`), we must systematically audit and update *all* interactive pseudo-classes (hover, focus, active) for that component to maintain a complete accessible experience.
+
+## 2025-04-24 - Elevating "Skip to Content" Links from Plain Text to Actionable Buttons
+**Learning:** In MyST documentation sites, visually hidden elements like `.myst-skip-to-link` ("Skip to article frontmatter") only change background color by default on focus. They lack a distinct outline, making keyboard navigation hard to track for visually impaired users.
+**Action:** Always ensure skip-to-content links receive explicit `:focus-visible` styling (like a robust 3px solid outline) in `custom.css` so users relying on keyboard navigation have clear visual cues when tabbing into the page.
