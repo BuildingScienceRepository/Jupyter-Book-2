@@ -104,7 +104,8 @@ article pre.myst-code-body {
 .myst-outline-collapsible:focus-visible,
 .myst-code-copy-icon:focus-visible,
 .myst-fm-launch-button:focus-visible,
-.myst-toc-item button:focus-visible {
+.myst-toc-item button:focus-visible,
+.myst-footer-link:focus-visible {
   outline: 3px solid #3b82f6 !important;
   outline-offset: 2px !important;
   border-radius: 0.375rem; /* rounded-md */
