@@ -88,3 +88,7 @@
 ## 2025-04-24 - Elevating "Skip to Content" Links from Plain Text to Actionable Buttons
 **Learning:** In MyST documentation sites, visually hidden elements like `.myst-skip-to-link` ("Skip to article frontmatter") only change background color by default on focus. They lack a distinct outline, making keyboard navigation hard to track for visually impaired users.
 **Action:** Always ensure skip-to-content links receive explicit `:focus-visible` styling (like a robust 3px solid outline) in `custom.css` so users relying on keyboard navigation have clear visual cues when tabbing into the page.
+
+## 2024-05-18 - Missing Focus States on MyST Footer Navigation Links
+**Learning:** The MyST default theme components, specifically the `.myst-footer-link` block links at the bottom of the page used for Previous/Next navigation, lack explicit visual focus indicators by default. This creates a critical accessibility issue where keyboard users navigating to the end of a long document cannot easily ascertain which link currently has focus.
+**Action:** When implementing custom styling for keyboard accessibility in MyST themes, ensure you explicitly target `.myst-footer-link:focus-visible` (and group it with other missing interactive elements) and apply a distinctive outline.
