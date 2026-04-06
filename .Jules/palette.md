@@ -92,3 +92,7 @@
 ## 2024-05-18 - Missing Focus States on MyST Footer Navigation Links
 **Learning:** The MyST default theme components, specifically the `.myst-footer-link` block links at the bottom of the page used for Previous/Next navigation, lack explicit visual focus indicators by default. This creates a critical accessibility issue where keyboard users navigating to the end of a long document cannot easily ascertain which link currently has focus.
 **Action:** When implementing custom styling for keyboard accessibility in MyST themes, ensure you explicitly target `.myst-footer-link:focus-visible` (and group it with other missing interactive elements) and apply a distinctive outline.
+
+## 2024-05-18 - Improve Table of Contents Keyboard Feedback
+**Learning:** In MyST documentation sidebars, interactive highlighting logic (like a left border on list items) is often tied exclusively to `:hover` on the wrapper `li` element (`.myst-outline-item`), which fails for keyboard users focusing the anchor `a` inside it. A distinct `:focus-within` on the parent container is necessary to sync the visual affordance (border highlight) with the keyboard focus ring on the link itself.
+**Action:** Always verify if complex UI patterns (like sidebars and nav outlines) use parent `:hover` states for context highlighting. If so, ensure an equivalent `:focus-within` is applied so keyboard navigators aren't disadvantaged. Also explicitly define a robust `:focus-visible` to interactive links.
