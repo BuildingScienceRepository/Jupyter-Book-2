@@ -241,7 +241,8 @@ article blockquote {
 .myst-fm-downloads-button,
 .myst-fm-launch-button,
 .myst-toc-item button,
-.myst-code-copy-icon {
+.myst-code-copy-icon,
+.myst-outline-collapsible {
   transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease !important;
 }
 
@@ -252,7 +253,8 @@ article blockquote {
 .myst-fm-downloads-button:active,
 .myst-fm-launch-button:active,
 .myst-toc-item button:active,
-.myst-code-copy-icon:active {
+.myst-code-copy-icon:active,
+.myst-outline-collapsible:active {
   transform: scale(0.92) !important;
 }
 
