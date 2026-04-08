@@ -1,0 +1,39 @@
+building myst-cli session with API URL: https://api.mystmd.org
+🍡 Execution parallelism set to: 3
+🌎 Building MyST site
+Building the base site.
+To set a baseurl (e.g. GitHub pages) use "BASE_URL" environment variable.
+📖 Built chapters/energy_demand.md in 59 ms.
+📖 Built notebooks/example_simulation.ipynb in 58 ms.
+📖 Built index.md in 158 ms.
+⛔️ index.md Could not find static resource at "exports/index-page.pdf" in downloads
+⛔️ index.md Could not find static resource at "exports/building-science-atlas-book.pdf" in downloads
+⛔️ chapters/energy_demand.md Could not find static resource at "chapters/exports/energy-demand-page.pdf" in downloads
+⛔️ chapters/energy_demand.md Could not find static resource at "exports/building-science-atlas-book.pdf" in downloads
+⛔️ notebooks/example_simulation.ipynb Could not find static resource at "notebooks/exports/example-simulation-page.pdf" in downloads
+⛔️ notebooks/example_simulation.ipynb Could not find static resource at "exports/building-science-atlas-book.pdf" in downloads
+📚 Built 3 pages for project in 196 ms.
+⛔️ myst.yml Could not find static resource at "exports/building-science-atlas-book.pdf" in downloads
+
+
+	✨✨✨  Starting Book Theme  ✨✨✨
+
+
+
+🔌 Server started on port 3002!  🥳 🎉
+
+
+	👉  http://localhost:3002  👈
+
+
+💌 GET  /example-simulation 200 - - 132.907 ms
+GET / 200 - - 121.136 ms
+GET /energy-demand 200 - - 128.969 ms
+💌 GET  /index.json 200 - - 136.614 ms
+GET /energy-demand.json 200 - - 132.894 ms
+💌 GET  /robots.txt 200 - - 2.399 ms
+💌 GET  /sitemap_style.xsl 200 - - 2.329 ms
+GET /sitemap.xml 200 - - 8.312 ms
+💌 GET  /myst-theme.css 200 - - 19.519 ms
+GET /example-simulation.json 200 - - 23.928 ms
+💌 GET  /favicon.ico 200 - - 247.782 ms

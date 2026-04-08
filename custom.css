@@ -307,3 +307,12 @@ article blockquote {
 .dark .myst-outline-item a:focus-visible {
   background-color: rgba(30, 41, 59, 0.8); /* slate-800 */
 }
+
+/* 🎨 Palette: Improve accessibility and polish of Primary Sidebar (Left TOC) */
+.myst-toc-item {
+  transition: background-color 0.2s ease;
+}
+
+.myst-toc-item:focus-within {
+  background-color: rgba(203, 213, 225, 0.3); /* Matches hover:bg-slate-300/30 */
+}
