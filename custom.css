@@ -95,6 +95,10 @@ article pre.myst-code-body {
 }
 
 /* Improve focus accessibility for header actionable icon buttons and links */
+.myst-home-link:focus-visible,
+a.myst-toc-item:focus-visible,
+.myst-made-with-myst:focus-visible,
+.myst-fm-author-popover:focus-visible,
 .myst-top-nav-menu-button:focus-visible,
 .myst-search-bar:focus-visible,
 .myst-theme-button:focus-visible,
