@@ -320,3 +320,19 @@ article blockquote {
 .myst-toc-item:focus-within {
   background-color: rgba(203, 213, 225, 0.3); /* Matches hover:bg-slate-300/30 */
 }
+
+/* 🎨 Palette: Improve accessibility and tactile feedback for heading anchor links (pilcrows) */
+:is(h1, h2, h3, h4, h5, h6) a.select-none {
+  display: inline-block; /* Required for transform to work properly */
+  transition: opacity 0.15s ease, transform 0.15s ease !important;
+}
+
+:is(h1, h2, h3, h4, h5, h6) a.select-none:focus-visible {
+  outline: 3px solid #3b82f6 !important;
+  outline-offset: 4px !important;
+  border-radius: 0.125rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) a.select-none:active {
+  transform: scale(0.85) !important;
+}
