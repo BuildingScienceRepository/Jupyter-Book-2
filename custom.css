@@ -157,6 +157,15 @@ a.myst-toc-item:focus-visible,
   outline-offset: 2px !important;
 }
 
+/* Ensure Skip to content container is legible in dark mode */
+.dark .myst-skip-to-article {
+  background-color: rgba(15, 23, 42, 1) !important; /* Tailwind slate-900 */
+}
+
+.dark .myst-skip-to-article .myst-skip-to-link:not(:hover):not(:focus) {
+  color: rgba(241, 245, 249, 1) !important; /* Tailwind slate-100 */
+}
+
 /* Improve horizontal tracking in data tables */
 article tbody tr {
   transition: background-color 0.15s ease-in-out;
