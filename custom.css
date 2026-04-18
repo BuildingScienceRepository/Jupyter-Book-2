@@ -29,6 +29,13 @@ article a:hover {
   opacity: 0.9;
 }
 
+/* Ensure inline links receive a clear focus ring matching the site's accessibility pattern */
+article a:focus-visible {
+  outline: 3px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+  border-radius: 0.125rem;
+}
+
 /* Provide spatial context for internal anchor links (e.g. footnotes, TOC) */
 :target {
   animation: highlight-target 2s ease-out forwards;
