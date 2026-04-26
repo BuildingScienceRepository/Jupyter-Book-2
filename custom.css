@@ -368,3 +368,10 @@ article blockquote {
 :is(h1, h2, h3, h4, h5, h6) a.select-none:active {
   transform: scale(0.85) !important;
 }
+
+/* 🎨 Palette: Improve accessibility of header icon links */
+/* Ensure icon opacity changes on keyboard focus, just like it does on hover */
+.myst-fm-github-link:focus-visible svg,
+.myst-fm-edit-link:focus-visible svg {
+  opacity: 1 !important;
+}
