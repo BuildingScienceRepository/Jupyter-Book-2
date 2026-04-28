@@ -129,7 +129,7 @@ a.myst-toc-item:focus-visible,
 
 /* Add an interactive background color shift to footer navigational links */
 .myst-footer-link {
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 }
 
 .myst-footer-link:hover {
@@ -138,6 +138,10 @@ a.myst-toc-item:focus-visible,
 
 .dark .myst-footer-link:hover {
   background-color: rgba(30, 41, 59, 0.4); /* slate-800 semi-transparent for dark mode */
+}
+
+.myst-footer-link:active {
+  transform: scale(0.98);
 }
 
 /* Enhance the "Skip to content" link for keyboard users */
