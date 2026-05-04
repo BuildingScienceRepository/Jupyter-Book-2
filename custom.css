@@ -389,3 +389,34 @@ article blockquote {
 .myst-toc-item div.cursor-pointer:active {
   transform: scale(0.98) !important;
 }
+
+/* 🎨 Palette: Improve empty state for Search Results */
+.myst-search-no-results {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 3rem 1rem !important;
+  color: rgba(100, 116, 139, 1) !important;
+  text-align: center !important;
+  font-size: 0.875rem !important;
+  border-radius: 0.5rem !important;
+  background-color: rgba(248, 250, 252, 0.5) !important;
+  border: 2px dashed rgba(203, 213, 225, 1) !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.myst-search-no-results::before {
+  content: "🔍" !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  opacity: 0.5 !important;
+  display: block !important;
+}
+
+.dark .myst-search-no-results {
+  color: rgba(148, 163, 184, 1) !important;
+  background-color: rgba(30, 41, 59, 0.3) !important;
+  border-color: rgba(71, 85, 105, 1) !important;
+}
