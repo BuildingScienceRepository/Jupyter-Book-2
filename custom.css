@@ -104,6 +104,7 @@ article pre.myst-code-body {
 /* Improve focus accessibility for header actionable icon buttons and links */
 .myst-home-link:focus-visible,
 a.myst-toc-item:focus-visible,
+.myst-toc-item a:focus-visible,
 .myst-made-with-myst:focus-visible,
 .myst-fm-author-popover:focus-visible,
 .myst-top-nav-menu-button:focus-visible,
@@ -296,6 +297,21 @@ article blockquote {
 .myst-code-copy-icon:active,
 .myst-outline-collapsible:active {
   transform: scale(0.92) !important;
+}
+
+/* 🎨 Palette: Add tactile feedback to primary navigation links (Left TOC, Right TOC, and Home) */
+.myst-home-link,
+a.myst-toc-item,
+.myst-toc-item a,
+.myst-outline-item a {
+  transition: transform 0.15s ease, background-color 0.2s ease, border-radius 0.2s ease !important;
+}
+
+.myst-home-link:active,
+a.myst-toc-item:active,
+.myst-toc-item a:active,
+.myst-outline-item a:active {
+  transform: scale(0.98) !important;
 }
 
 /* Ensure links acting as buttons display correctly for transform to apply */
