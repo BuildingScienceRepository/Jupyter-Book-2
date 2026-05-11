@@ -436,3 +436,25 @@ a.myst-toc-item:active,
   background-color: rgba(30, 41, 59, 0.3) !important;
   border-color: rgba(71, 85, 105, 1) !important;
 }
+
+/* 🎨 Palette: Add accessible names to icon-only GitHub and Edit links */
+.myst-fm-github-link::after {
+  content: "View source on GitHub";
+}
+
+.myst-fm-edit-link::after {
+  content: "Edit this page";
+}
+
+.myst-fm-github-link::after,
+.myst-fm-edit-link::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
