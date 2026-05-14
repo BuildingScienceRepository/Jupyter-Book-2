@@ -26,11 +26,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Here is a summary table of different methods:
 
+```{table} Comparison of Simulation Methods
+:name: method-comparison
+
 | Method | Accuracy | Complexity |
 | --- | --- | --- |
 | Rules of Thumb | Low | Very Low |
 | Steady-State | Medium | Low |
 | Dynamic Simulation | High | High |
+```
 
 ## 2. Simulations: Levels of Complexity
 
